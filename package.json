@@ -1,31 +1,31 @@
 {
-    "name": "wyrd",
-    "displayName": "Wyrd",
-    "description": "Theme based on Flatland Monokai Improved by asokawotulo",
-    "license": "MIT",
-    "version": "1.3.0",
-    "publisher": "leivysallia",
-    "engines": {
-        "vscode": "^1.19.0"
-    },
     "categories": [
         "Themes"
     ],
-    "scripts": {
-        "build": "vsce package"
-    },
-    "icon": "icon.jpg",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Leivysallia/wyrd-theme.git"
-    },
     "contributes": {
         "themes": [
             {
                 "label": "Wyrd",
-                "uiTheme": "vs-dark",
-                "path": "./themes/wyrd.json"
+                "path": "./themes/wyrd.json",
+                "uiTheme": "vs-dark"
             }
         ]
-    }
+    },
+    "description": "Theme based on Flatland Monokai Improved by asokawotulo",
+    "displayName": "Wyrd",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "icon": "icon.jpg",
+    "license": "MIT",
+    "name": "wyrd",
+    "publisher": "Leivysallia",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Leivysallia/wyrd-theme.git"
+    },
+    "scripts": {
+        "build": "vsce package"
+    },
+    "version": "0.0.1"
 }

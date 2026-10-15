@@ -89,13 +89,28 @@
             }
         },
         {
+            "scope": "support.type",
+            "settings": {
+                "foreground": "#ee6e6e",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "support.type.property-name",
+            "settings": {
+                "foreground": "#5ea375",
+                "fontStyle": ""
+            }
+        },
+        {
             "scope": [
                 "keyword.control",
-                "keyword.operator.unary"
+                "keyword.operator.unary",
+                "keyword.control.flow.python"
             ],
             "settings": {
                 "foreground": "#c5315d",
-                "fontStyle": "italic bold"
+                "fontStyle": "italic"
             }
         },
         {
@@ -146,19 +161,23 @@
             }
         },
         {
-            "name": "Comments",
-            "scope": "comment.line",
+            "scope": "string.quoted.docstring.multi",
             "settings": {
-                "foreground": "#53796c",
-                "fontStyle": "italic"
+                "foreground": "#345345"
             }
         },
         {
-            "name": "Comment",
             "scope": "comment",
             "settings": {
-                "foreground": "#53796c",
-                "fontStyle": "italic"
+                "fontStyle": "italic",
+                "foreground": "#476d70"
+            }
+        },
+        {
+            "scope": "punctuation.definition.comment",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#924d92"
             }
         },
         {
@@ -222,16 +241,16 @@
             "name": "Python - meta",
             "scope": "meta.function",
             "settings": {
-                "foreground": "#aa2b2b",
-                "fontStyle": "bold"
+                "foreground": "#fd8f46f1",
+                "fontStyle": ""
             }
         },
         {
             "name": "Python - meta",
             "scope": "meta.indexed-name",
             "settings": {
-                "foreground": "#b13f3f",
-                "fontStyle": "bold"
+                "foreground": "#5cb6c2",
+                "fontStyle": "italic"
             }
         },
         {
@@ -246,7 +265,7 @@
             "name": "Python - meta",
             "scope": "meta.function-call",
             "settings": {
-                "foreground": "#f8aa60",
+                "foreground": "#f54d69",
                 "fontStyle": ""
             }
         },
@@ -278,8 +297,7 @@
             "name": "Python - meta",
             "scope": "source.python",
             "settings": {
-                "foreground": "#89f1d7",
-                "fontStyle": ""
+                "foreground": "#52ce86"
             }
         },
         {
@@ -293,32 +311,36 @@
             "name": "Number",
             "scope": "constant.numeric",
             "settings": {
-                "foreground": "#AE81FF"
+                "foreground": "#7c817f"
             }
         },
         {
             "name": "Built-in constant",
             "scope": "constant.language",
             "settings": {
-                "foreground": "#ff8181"
+                "foreground": "#ff8181",
+                "fontStyle": "italic"
             }
         },
         {
             "name": "User-defined constant",
-            "scope": [
-                "constant.character",
-                "constant.other"
-            ],
+            "scope": "constant.character",
             "settings": {
-                "foreground": "#AE81FF"
+                "foreground": "#F8AA60"
+            }
+        },
+        {
+            "scope": "constant.other",
+            "settings": {
+                "foreground": "#F8AA60"
             }
         },
         {
             "name": "Variable",
             "scope": "variable",
             "settings": {
-                "foreground": "#ff0000",
-                "fontStyle": ""
+                "foreground": "#e2c679",
+                "fontStyle": "italic"
             }
         },
         {
@@ -341,7 +363,7 @@
             "scope": "storage.type",
             "settings": {
                 "fontStyle": "italic",
-                "foreground": "#66D9EF"
+                "foreground": "#5bdd9c"
             }
         },
         {
@@ -411,7 +433,6 @@
         {
             "name": "Library class/type",
             "scope": [
-                "support.type",
                 "support.class"
             ],
             "settings": {
@@ -662,6 +683,13 @@
             }
         },
         {
+            "scope": "punctuation.definition.string",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ace07bd5"
+            }
+        },
+        {
             "name": "Markdown - Link",
             "scope": [
                 "string.other.link.title.markdown",
@@ -738,6 +766,104 @@
             ],
             "settings": {
                 "foreground": "#EEFFFF"
+            }
+        },
+        {
+            "scope": [
+                "keyword.control",
+                "keyword.operator.unary"
+            ],
+            "settings": {
+                "foreground": "#c58686cc",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "keyword.control.flow.python",
+            "settings": {
+                "foreground": "#c58686cc",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "meta.function",
+            "settings": {
+                "foreground": "#fd8f46f1",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "meta.function-call",
+            "settings": {
+                "foreground": "#f54d69",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "meta.indexed-name",
+            "settings": {
+                "foreground": "#5cb6c2",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "storage.type",
+            "settings": {
+                "foreground": "#5bdd9c",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "constant.other",
+            "settings": {
+                "foreground": "#F8AA60",
+                "fontStyle": ""
+            }
+        },
+        {
+            "scope": "punctuation.definition.variable.powershell",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#5bdd9c"
+            }
+        },
+        {
+            "scope": "comment",
+            "settings": {
+                "fontStyle": "italic",
+                "foreground": "#476d70"
+            }
+        },
+        {
+            "scope": "string.quoted.docstring.multi",
+            "settings": {
+                "foreground": "#345345"
+            }
+        },
+        {
+            "scope": "constant.numeric.float",
+            "settings": {
+                "foreground": "#7c817f"
+            }
+        },
+        {
+            "scope": "constant.numeric.dec",
+            "settings": {
+                "foreground": "#7c817f"
+            }
+        },
+        {
+            "scope": "punctuation.definition.comment",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#924d92"
+            }
+        },
+        {
+            "scope": "punctuation.definition.string",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#ace07bd5"
             }
         }
     ]
